@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
+	<title>shop-cart</title>
+	<link rel="stylesheet" href="css/shop.css">
+	<link rel="stylesheet" href="css/slider.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,400i" rel="stylesheet">
+	<link rel="stylesheet" href="dist/slicknav.css">
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+	<script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
+    <script src="js/jssor.slider-21.1.6.mini.js" type="text/javascript"></script>
+    <script src="js/slider.js" type="text/javascript"></script>
+</head>
+<body>
+	<div class="wrapper"> 
+		<div class="inner">
+		<div class="border"></div>
+			<div class="inner2">
+				<div class="header">
+					<div class="logo">
+						<a href="#">
+							<img src="images/logo.png" alt="logo">
+						</a>
+					</div>
+					<div class="right">
+						<div class="basket">
+							<a href="#">
+								<img src="images/basket.png" alt="basket">
+							</a>
+						</div>
+					</div>
+					<div class="menu">
+						<ul id="menu">
+							<div class="in">
+							    <li>
+							    	<a href="#">Woman</a>
+							    </li>
+							    <li>
+							    	<a href="#">Men</a>
+							    </li>
+							    <li>
+							    	<a href="#">Kids</a>
+							    </li>
+							    <li>
+							    	<a href="#">Comming Soon</a>
+							    </li>
+							    <li>
+							    	<a href="#">About</a>
+							    </li>
+							</div>
+						</ul>
+					</div>
+				</div>
+				<div class="header-desk">
+					<div class="navigation">
+						<ul>
+							<li>
+								<a href="#"><img src="images/logo.png" alt="logo"></a>
+							</li>
+							<li>
+							   	<a href="#">Woman</a>
+							</li>
+						  	<li>
+							  	<a href="#">Men</a>
+							</li>
+						    <li>
+						    	<a href="#">Kids</a>
+						    </li>
+						    <li>
+						    	<a href="#">Comming Soon</a>
+						    </li>
+						    <li>
+						    	<a href="#">About</a>
+							 </li>
+						</ul>
+					</div>
+					<div class="log">
+						<div class="log-icon">
+							<a href="#"><img src="images/log-in.png" alt="log in"></a>
+							<span>Log In</span>
+						</div>
+						<div class="log-icon">
+							<a href="#"><img src="images/basket.png" alt="basket" style="width: 17px; height: 17px;"></a>
+							<span>Basket (0)</span>
+						</div>
+						<div class="log-icon">
+							<input id="search" type="text" placeholder="Search something...">
+							<a onclick="document.getElementById('search').style.display='block'" class="search" href="#"></a>
+						</div>
+					</div>
+				</div>
+				<div class="bag">
+					<div class="spans">
+						<span>home</span>
+						<span>/</span>
+						<span>men</span>
+					</div>
+					<h1>Your Shopping Bag</h1>
+					<h2>Items reserved for limited time only</h2>
+				</div>
+				<div class="shop-icons">
+					<div class="shop-icon">
+						<div class="img">
+							<a href="#">
+								<img src="images/shop-img.png" alt="shop-img">
+							</a>
+						</div>
+						<div class="description">
+							<span>
+								<b>Double-Layered Top</b>
+							</span>
+							<span style="font-size: 16px; color: #606060; font-weight: 400i;">
+								Ref. 2514/302
+							</span>
+							<span>
+								Color: <b>Green</b>
+							</span>
+							<span>
+								Size: <b>L</b>
+							</span>
+						</div>
+						<div class="price" style="bottom: 10px;">
+							<span>
+								<b>€ 89,95</b>
+							</span>
+						</div>
+					</div>
+					<div class="shop-icon">
+						<div class="img">
+							<a href="#">
+								<img src="images/shop-img.png" alt="shop-img">
+							</a>
+						</div>
+						<div class="description">
+							<span>
+								<b>Double-Layered Top</b>
+							</span>
+							<span style="font-size: 16px; color: #606060; font-weight: 400i;">
+								Ref. 2514/302
+							</span>
+							<span>
+								Color: <b>Brown</b>
+							</span>
+							<span>
+								Size: <b>L</b>
+							</span>
+						</div>
+						<div class="price">
+							<span>
+								<b>€ 169,95</b>
+							</span>
+						</div>
+					</div>
+				</div>
+				<div class="table">
+					<div class="heading">
+							<div class="col1">
+								<span>product</span>
+								<span>description</span>
+							</div>
+							<div class="col2">
+								<span>color</span>
+								<span>size</span>
+								<span>qty</span>
+								<span>amount</span>
+							</div>
+					</div>
+					<div class="table-icon" id="icon" style="border-top: 1px solid #e5e5e5;">
+						<div class="left">
+							<div class="img">
+								<img src="images/img-square-cart.png" alt="images/img-square-cart">
+							</div>
+							<div class="description">
+								<span>FLORAL PLIMSOLL</span>
+								<span>Ref. 2514/302</span>
+							</div>
+						</div>
+						<div class="right">
+							<div class="ic">
+								<span>One Color</span>
+							</div>	
+							<div class="ic" style="margin-right: 25px;">
+								<span>39</span>
+							</div>	
+							<div class="icc">
+								<div class="number">
+									<span class="plus">+</span>	
+									<input type="text" value="1" size="5"/>
+									<span class="minus">-</span>
+								</div>
+							</div>	
+							<div class="ic">
+								<div class="cost">
+									<span style="float: left;">€99,95</span>
+									<a href="#">
+										<img onclick="document.getElementById('icon').style.display='none'" src="images/cross.png" alt="cross">
+									</a>
+								</div>
+							</div>	
+						</div>
+					</div>
+					<div class="table-icon" id="icon2">
+						<div class="left">
+							<div class="img">
+								<img src="images/img-square-cart.png" alt="images/img-square-cart">
+							</div>
+							<div class="description">
+								<span>COATED 5 POCKET TROUSERS</span>
+								<span>Ref. 8246/044</span>
+							</div>
+						</div>
+						<div class="right">
+							<div class="ic">
+								<span>One Color</span>
+							</div>	
+							<div class="ic" style="margin-right: 25px;">
+								<span>M</span>
+							</div>	
+							<div class="icc">
+								<div class="number">
+									<span class="plus">+</span>	
+									<input type="text" value="1" size="5"/>
+									<span class="minus">-</span>
+								</div>
+							</div>	
+							<div class="ic">
+								<div class="cost">
+									<span style="float: left;">€169,00</span>
+									<a href="#">
+										<img onclick="document.getElementById('icon2').style.display='none'" src="images/cross.png" alt="cross">
+									</a>
+								</div>
+							</div>	
+						</div>
+					</div>
+					<div class="table-icon" id="icon3">
+						<div class="left">
+							<div class="img">
+								<img src="images/img-square-cart.png" alt="images/img-square-cart">
+							</div>
+							<div class="description">
+								<span>OVERSIZED STUDIO BLOUSE</span>
+								<span>Ref. 2401/657</span>
+							</div>
+						</div>
+						<div class="right">
+							<div class="ic">
+								<span>Black</span>
+							</div>	
+							<div class="ic" style="margin-right: 25px;">
+								<span>S</span>
+							</div>	
+							<div class="icc">
+								<div class="number">
+									<span class="plus">+</span>	
+									<input type="text" value="1" size="5"/>
+									<span class="minus">-</span>
+								</div>
+							</div>	
+							<div class="ic">
+								<div class="cost">
+									<span style="float: left;">€299,00</span>
+									<a href="#">
+										<img onclick="document.getElementById('icon3').style.display='none'" src="images/cross.png" alt="cross">
+									</a>
+								</div>
+							</div>	
+						</div>
+					</div>
+				</div>
+				<div class="total">
+					<h1>
+						Subtotal: <span>€567,95</span>
+					</h1>
+					<a href="#"><h2>Continue Shopping</h2></a>
+					<input type="submit" value="add to cart">
+				</div>
+				<div class="subtotal">
+					<h1>
+						Subtotal: <span>€567,95</span>
+					</h1>
+				</div>
+				<div class="order">
+					<a href="#"><h2>Continue Shopping</h2></a>
+					<input type="submit" value="ORDER NOW">
+				</div>
+				<div class="footer">
+					<div class="foot_icon">
+						<h1>collection</h1>
+						<a href="#">Woman (1725)</a>
+						<a href="#">Men (635)</a>
+						<a href="#">Kids (2514)</a>
+						<a href="#">Comming Soon (76)</a>
+					</div>
+					<div class="foot_icon">
+						<h1>site</h1>
+						<a href="#">Terms of Service</a>
+						<a href="#">Privacy Policy</a>
+						<a href="#">Press Kit</a>
+						<a href="#">Support</a>
+					</div>
+					<div class="foot_icon">
+						<h1>shop</h1>
+						<a href="#">About us</a>
+						<a href="#"><a href="#">Shipping Metods</a>
+						<a href="#">Career</a>
+						<a href="#">Contact</a>
+					</div>
+				<div class="foot_icon">
+					<h1>social</h1>
+					<p>
+						Shoper is made with love in Warsaw,<br>
+						2014 © All rights reserved. El Passion
+					</p>
+					<div class="social">
+						<div class="icon">
+							<a class="twitter" href="#"></a>
+						</div>
+						<div class="icon">
+							<a class="facebook" href="#"></a>
+						</div>
+						<div class="icon">
+							<a class="instagram" href="#"></a>
+						</div>
+					</div>
+				</div>				
+			</div>
+		</div>
+	</div>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="dist/jquery.slicknav.js"></script>
+	<script type="text/javascript" src="http://pcvector.net/templates/pcv/js/pcvector.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#menu').slicknav();
+		});
+
+		$(document).ready(function() {
+			$('.minus').click(function () {
+				var $input = $(this).parent().find('input');
+				var count = parseInt($input.val()) - 1;
+				count = count < 1 ? 1 : count;
+				$input.val(count);
+				$input.change();
+				return false;
+			});
+			$('.plus').click(function () {
+				var $input = $(this).parent().find('input');
+				$input.val(parseInt($input.val()) + 1);
+				$input.change();
+				return false;
+			});
+		});
+	</script>
+</body>
+</html>
